@@ -8,6 +8,7 @@ let house = new Schema({
   levels: { type: Number, required: true },
   year: { type: Number, required: true, minLength: 2, maxlength: 4 },
   price: { type: Number, required: true, minlength: 3, maxlength: 10 },
+  imgUrl: { type: String, required: true },
   description: { type: String, maxlength: 300 }
 })
 

@@ -13,7 +13,7 @@ require('./server-assets/db/gearhost-config')
 server.use(bp.json())
 server.use(bp.urlencoded({ extended: true }))
 
-let whitelist = ['http://localhost:8080']
+let whitelist = ['http://localhost:8080', 'http://127.0.0.1:5500']
 let corsOptions = {
   origin: function (origin, callback) {
     let originIsWhitelisted = whitelist.indexOf(origin) !== -1
